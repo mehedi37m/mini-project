@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { GoUnread } from "react-icons/go";
 import logo from "../../assets/logo.jpg";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaHome, FaArrowUp } from 'react-icons/fa';
 
 const NavBar = () => {
   const navLink = (
@@ -9,23 +10,20 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/service">Service</Link>
       </li>
       <li>
-        <Link to="/menu">Menu</Link>
+        <Link to="/project">Project</Link>
       </li>
       <li>
-        <Link to="/activity">Activity</Link>
+        <Link to="/about">About Us</Link>
       </li>
       <li>
         <Link to="/contact">Contact</Link>
       </li>
 
       <Link to="/dashboard/cart">
-        <button className="btn btn-ghost">
-          <GoUnread className="mr-2"></GoUnread>
-          {/* <div className="badge badge-secondary">+{cart.length}</div> */}
-        </button>
+       
       </Link>
     </>
   );
@@ -59,13 +57,36 @@ const NavBar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            <img className="h-8" src={logo} alt="" />
-            CSE SEU Student
+            <img className="h-8 " src={logo} alt="" />
+            <span className="">Time  </span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
+         <div className="flex flex-col items-center gap-4 p-6">
+                  {/* Social Icons */}
+                  <div className="flex gap-4">
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <FaFacebookF />
+                    </button>
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <FaLinkedinIn />
+                    </button>
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <FaInstagram />
+                    </button>
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <FaHome />
+                    </button>
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <FaArrowUp />
+                    </button>
+                  </div>
+        
+                  {/* Buttons */}
+                  
+                </div>
        
       </div>
     </div>
