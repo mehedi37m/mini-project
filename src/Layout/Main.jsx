@@ -21,7 +21,7 @@ const Main = () => {
     );
   }
     return (
-        <div>
+        <div className='bg-[#0c0c1d]'>
            
             <NavBar></NavBar>
             <Outlet></Outlet>
