@@ -62,7 +62,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLink}</ul>
+          <ul className="menu menu-horizontal px-1 text-xl text-white">{navLink}</ul>
         </div>
          <div className="flex flex-col items-center gap-4 p-6">
                   {/* Social Icons */}

@@ -4,6 +4,7 @@ import {
 import Main from "../Layout/Main";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home from "../Home/Home/Home";
+import ProjectMain from "../Home/Project/ProjectMain";
 
   const Router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ import Home from "../Home/Home/Home";
         {
             path: "/",
             element:<Home></Home>
+        },
+        {
+            path: "/service",
+            element:<ProjectMain></ProjectMain>
         },
       ]
     }

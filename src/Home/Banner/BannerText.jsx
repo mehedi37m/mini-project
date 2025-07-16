@@ -29,7 +29,8 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
       >
-        Its your time to shine
+        Its your <span className="text-yellow-500">time to shine</span>
+          — we create opportunities.
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -38,8 +39,9 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
       >
-        Mst Suberna <br className="sm:hidden md:block" />
-        hossain
+        Fuel Your Growth with <span className="text-yellow-500">Smarter Leads</span>
+ <br className="sm:hidden md:block" />
+       
       </motion.h1>
       <motion.h2
         variants={fadeIn("left", 0.4)}

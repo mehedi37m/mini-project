@@ -17,7 +17,7 @@ const Home = () => {
             <Banner></Banner>
             <StudentWork></StudentWork>
             <ProjectMain></ProjectMain>
-            {/* <Live></Live> */}
+            <Live></Live>
             <PromoBanner></PromoBanner>
             <TopTeacher></TopTeacher>
               
