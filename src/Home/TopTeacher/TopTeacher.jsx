@@ -1,64 +1,55 @@
-import Marquee from "react-fast-marquee";
+
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
+import "./TopTeacher.css"
 
 const TopTeacher = () => {
-  const teacher = [
-    {
-      id: "1",
-      name: "Tanvir d",
-      image: "https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg",
-      email: "tanvir@gmail.com",
-    },
-    {
-      id: "2",
-      name: "Tanvir s",
-      image: "https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg",
-      email: "tanvir@gmail.com",
-    },
-    {
-      id: "3",
-      name: "Tanvir p",
-      image: "https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg",
-      email: "tanvir@gmail.com",
-    },
   
-    {
-      id: "5",
-      name: "Tanvir r",
-      image: "https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg",
-      email: "tanvir@gmail.com",
-    },
-  
-  ];
 
   return (
-    <div>
+    <div className="pt-40">
       <SectionTitle
-        heading={"Top Teacher"}
-        subHeading={"CSE"}
+        heading={"Top Project"}
+        subHeading={"leadZora"}
       ></SectionTitle>
 
-      <Marquee>
-        <div className="flex justify-center gap-5">
-          {teacher.map((user) => (
-            <div key={user.id}>
-              <div className="card w-96 h-72 bg-blue-100 shadow-xl mr-5">
-                <figure className="px-10 pt-10">
-                  <img
-                    src={user.image}
-                    alt={user.name}
-                    className="h-36 w-44 rounded-full"
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h2 className="card-title text-black"> Name : {user.name}</h2>
-                  <p className="text-black"> Email : {user.email}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div>
+
+        <div className="containeer ">
+          <div className="card__container ">
+
+            <article className="card__article">
+              <img src={`https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg`} alt="" className="card__img" />
+               <div className="card__data">
+                <span className="card__description">Group Leader</span>
+                <h2 className="card__title">Mst Suberna Hossain</h2>
+                <a href="" className="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article className="card__article">
+              <img src={`https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg`} alt="" className="card__img" />
+               <div className="card__data">
+                <span className="card__description"></span>
+                <h2 className="card__title"></h2>
+                <a href="" className="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article className="card__article">
+              <img src={`https://i.ibb.co/q1ZNP1R/arthur-lambillotte-Om8-Wd-Pm74-RM-unsplash.jpg`} alt="" className="card__img" />
+               <div className="card__data">
+                <span className="card__description"></span>
+                <h2 className="card__title"></h2>
+                <a href="" className="card__button">Read More</a>
+               </div>
+            </article>
+
+          </div>
         </div>
-      </Marquee>
+
+      </div>
+
+      
     </div>
   );
 };

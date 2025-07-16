@@ -5,6 +5,8 @@ import Main from "../Layout/Main";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home from "../Home/Home/Home";
 import ProjectMain from "../Home/Project/ProjectMain";
+import TopTeacher from "../Home/TopTeacher/TopTeacher";
+import Contact from "../Components/Contact/Contact";
 
   const Router = createBrowserRouter([
     {
@@ -19,6 +21,14 @@ import ProjectMain from "../Home/Project/ProjectMain";
         {
             path: "/service",
             element:<ProjectMain></ProjectMain>
+        },
+        {
+            path: "/project",
+            element:<TopTeacher></TopTeacher>
+        },
+        {
+            path: "/contact",
+            element:<Contact></Contact>
         },
       ]
     }

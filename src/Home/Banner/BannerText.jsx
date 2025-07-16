@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "../../framerMotion/fadeIn";
+import { Link } from "react-router-dom";
 
 
 
@@ -74,12 +75,12 @@ const BannerText = () => {
         A Passionate Lead generation and Instructor <br /> with 5 years of
         experience.
         <div className="flex gap-2">
-            <button className="bg-orange-700 btn-primary text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
+            <Link to="/about"><button className="bg-orange-700 btn-primary text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
               About Us
-            </button>
-            <button className="bg-orange-700 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
-              Contact
-            </button>
+            </button></Link>
+           <Link to="/contact"> <button  className="bg-orange-700 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
+              Hire Me
+            </button></Link>
 
           </div>
       </motion.div>

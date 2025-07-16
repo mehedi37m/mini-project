@@ -1,3 +1,4 @@
+import Contact from "../../Components/Contact/Contact";
 import Banner from "../Banner/Banner";
 import Live from "../Live/Live";
 import ProjectMain from "../Project/ProjectMain";
@@ -12,7 +13,7 @@ import TopTeacher from "../TopTeacher/TopTeacher";
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             
             <Banner></Banner>
             <StudentWork></StudentWork>
@@ -20,6 +21,7 @@ const Home = () => {
             <Live></Live>
             <PromoBanner></PromoBanner>
             <TopTeacher></TopTeacher>
+            <Contact></Contact>
               
         </div>
     );

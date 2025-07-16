@@ -25,7 +25,7 @@ const Main = () => {
            
             <NavBar></NavBar>
             <Outlet></Outlet>
-            <Footer></Footer>
+            
             
             
         </div>
