@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-import { GoUnread } from "react-icons/go";
 import logo from "../../assets/logo.jpg";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaHome, FaArrowUp } from 'react-icons/fa';
+import { FaUpwork } from "react-icons/fa6";
+import { TbBrandFiverr } from "react-icons/tb";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const NavBar = () => {
   const navLink = (
     <>
       <li>
-        <Link to="/" id="home">Home</Link>
+        <Link to="/" className="home" id="home">Home</Link>
       </li>
       <li>
         <Link to="/service" id="service">Service</Link>
@@ -66,27 +68,28 @@ const NavBar = () => {
         </div>
          <div className="flex flex-col items-center gap-4 p-6">
                   {/* Social Icons */}
-                  <div className="flex gap-4">
-                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-                      <FaFacebookF />
-                    </button>
+                  <div className="flex gap-4 ">
+                    
                     <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
                       <FaLinkedinIn />
                     </button>
                     <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-                      <FaInstagram />
+                      <FaUpwork />
                     </button>
                     <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-                      <FaHome />
+                      <FaFacebookF />
                     </button>
                     <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-                      <FaArrowUp />
+                      <TbBrandFiverr />
+                    </button>
+                    <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                      <RiTwitterXFill />
                     </button>
                   </div>
         
                   {/* Buttons */}
                   
-                </div>
+         </div>
        
       </div>
     </div>

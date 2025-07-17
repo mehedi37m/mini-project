@@ -19,11 +19,11 @@ import Contact from "../Components/Contact/Contact";
             element:<Home></Home>
         },
         {
-            path: "/service",
+            path: "/project",
             element:<ProjectMain></ProjectMain>
         },
         {
-            path: "/project",
+            path: "/service",
             element:<TopTeacher></TopTeacher>
         },
         {

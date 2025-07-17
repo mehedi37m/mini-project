@@ -34,7 +34,7 @@ const People = () => {
 
     return (
         <div>
-            <Marquee>
+           
         <div className="flex justify-center gap-5">
           {teacher.map((user) => (
             <div key={user.id}>
@@ -54,7 +54,7 @@ const People = () => {
             </div>
           ))}
         </div>
-      </Marquee>
+     
             
         </div>
     );

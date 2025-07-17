@@ -2,6 +2,16 @@ import { useRef, useState } from "react";
 import "./contact.css";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaHome,
+  FaArrowUp,
+} from "react-icons/fa";
+import { FaUpwork } from "react-icons/fa6";
+import { TbBrandFiverr } from "react-icons/tb";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const variants = {
   initial: {
@@ -20,23 +30,23 @@ const variants = {
 
 const Contact = () => {
   const formRef = useRef();
-  const [error, setError] = useState(false)
-  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm("service_2a1rb3p", "template_rumm6ry", formRef.current, {
-        publicKey: "cUFjV0QLMpIhegHHF", 
+        publicKey: "cUFjV0QLMpIhegHHF",
       })
       .then(
         () => {
-            setSuccess(true)
+          setSuccess(true);
           console.log("SUCCESS!");
         },
         (error) => {
-            setError(true)
+          setError(true);
           console.log("FAILED...", error.text);
         }
       );
@@ -49,20 +59,47 @@ const Contact = () => {
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textContainer" variants={variants}>
-        <motion.h1 className="font-bold md:text-8xl">Let's <span className="text-yellow-500 font-bold">work</span> together</motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>mz.mehedi37@gmail.com</span>
+      <motion.div className="textContainer " variants={variants}>
+        <motion.h1 className="font-bold md:text-8xl">
+          Let's <span className="text-yellow-500 font-bold">work</span> together
+        </motion.h1>
+        <motion.div className="item text-2xl text-white" variants={variants}>
+          <h2>Email</h2>
+          <span>subarnahosen40@gmail.com</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
+        <motion.div className="item text-2xl text-white" variants={variants}>
           <h2>Address</h2>
-          <span>Mohakhali,Dhaka</span>
+          <span>Bagha, Rajshahi, Bangladesh</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
+        <motion.div className="item text-2xl text-white" variants={variants}>
           <h2>Phone</h2>
-          <span>01303522009</span>
+          <span>01783104340</span>
         </motion.div>
+        <div className=" gap-4 ">
+          {/* Social Icons */}
+          <div className="flex gap-4 text-2xl ">
+            <button
+              onClick={`https://www.linkedin.com/in/subarna-h-079805183`}
+              className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50"
+            >
+              <FaLinkedinIn />
+            </button>
+            <button onClick={`https://www.upwork.com/freelancers/~0122d17e06b4ed2d35`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+              <FaUpwork />
+            </button>
+            <button onClick={`https://www.facebook.com/subarna.hosen.2024`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+              <FaFacebookF />
+            </button>
+            <button onClick={`https://www.fiverr.com/s/xXQa1xX`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+              <TbBrandFiverr />
+            </button>
+            <button onClick={`https://x.com/BindaasB33434`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+              <RiTwitterXFill />
+            </button>
+          </div>
+
+          {/* Buttons */}
+        </div>
       </motion.div>
 
       <div className="formContainer">
@@ -100,8 +137,8 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
         >
-          <input type="text" placeholder="Name" required name="name"/>
-          <input type="email" placeholder="Email" required name="email"/>
+          <input type="text" placeholder="Name" required name="name" />
+          <input type="email" placeholder="Email" required name="email" />
           <textarea rows={8} placeholder="Message" name="message"></textarea>
           <button>Submit</button>
           {error && "Error"}

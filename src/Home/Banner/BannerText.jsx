@@ -21,7 +21,7 @@ const sliderVariants = {
 
 const BannerText = () => {
   return (
-    <div className="flex flex-col gap-4 h-[80vh] justify-center md:text-left sm:text-center">
+    <div className="flex flex-col gap-4  justify-center md:text-left sm:text-center">
         
       <motion.h2
         variants={fadeIn("down", 0.2)}
@@ -94,7 +94,7 @@ const BannerText = () => {
        
       </motion.div>
       <motion.div
-        className="absolute text-[20vh] bottom-[500px] text-[#ffffff09] w-1/2 whitespace-nowrap font-bold"
+        className="absolute text-[20vh] text-[#ffffff09] w-1/2 whitespace-nowrap font-bold"
         variants={sliderVariants}
         initial="initial"
         animate="animate"

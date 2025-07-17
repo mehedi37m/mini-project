@@ -64,9 +64,11 @@
         button{
             padding: 20px;
             border: none;
-            background-color: orange;
+            background-color: rgb(133, 93, 18);
             cursor: pointer;
             font-weight: 500;
+            border-radius: 5px;
+            color: white;
 
         }
 

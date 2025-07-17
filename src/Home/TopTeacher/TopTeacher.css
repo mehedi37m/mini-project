@@ -37,13 +37,13 @@ body {
   font-family: var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
-}
+}*/
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+} 
 
 /*=============== CARD ===============*/
 .containeer {
@@ -56,7 +56,7 @@ img {
 
 .card__container {
   display: grid;
-  row-gap: 3.5rem;
+  row-gap: 5.5rem;
   grid-column: 3;
 }
 
@@ -190,13 +190,11 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1120px) {
-  .containeer {
-    height: 100vh;
-  }
+  
 
   .card__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 70px;
     
   }
   .card__img {

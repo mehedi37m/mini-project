@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { fadeIn } from "../../framerMotion/fadeIn";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -65,7 +66,7 @@ const projects = [
   },
 ]
 
-const ProjectMain = () => {
+const HomePageProject = () => {
   return (
     <div>
       <div id="projects" className="  px-4">
@@ -78,7 +79,7 @@ const ProjectMain = () => {
           <ProjectsText />
         </motion.div>
         <div className="flex flex-col gap-20 max-w-[1000px] mx-auto mt-12">
-          {projects.map((project, index) => {
+          {projects.slice(0,3).map((project, index) => {
             return (
               <SingleProject
                 key={index}
@@ -91,9 +92,12 @@ const ProjectMain = () => {
             );
           })}
         </div>
+        <div className="text-center mt-10">
+            <Link to={`/project`} className="btn text-white bg-yellow-700 hover:bg-white hover:text-black">Show All</Link>
+        </div>
       </div>
     </div>
   );
 };
 
-export default ProjectMain;
+export default HomePageProject;
