@@ -3,8 +3,6 @@ import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "../../framerMotion/fadeIn";
 import { Link } from "react-router-dom";
 
-
-
 const sliderVariants = {
   initial: {
     x: 0,
@@ -22,7 +20,6 @@ const sliderVariants = {
 const BannerText = () => {
   return (
     <div className="flex flex-col gap-4  justify-center md:text-left sm:text-center">
-        
       <motion.h2
         variants={fadeIn("down", 0.2)}
         initial="hidden"
@@ -30,8 +27,8 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
       >
-        Its your <span className="text-yellow-500">time to shine</span>
-          — we create opportunities.
+        Its your <span className="text-yellow-500">time to shine</span>— we
+        create opportunities.
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -40,9 +37,9 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
       >
-        Fuel Your Growth with <span className="text-yellow-500">Smarter Leads</span>
- <br className="sm:hidden md:block" />
-       
+        Fuel Your Growth with{" "}
+        <span className="text-yellow-500">Smarter Leads</span>
+        <br className="sm:hidden md:block" />
       </motion.h1>
       <motion.h2
         variants={fadeIn("left", 0.4)}
@@ -63,7 +60,7 @@ const BannerText = () => {
           cursor={false}
         />
       </motion.h2>
-     
+
       <motion.div
         variants={fadeIn("up", 0.6)}
         initial="hidden"
@@ -71,18 +68,22 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4 space-y-6"
       >
-        
-        A Passionate Lead generation and Instructor <br /> with 5 years of
-        experience.
+        <p className="text-gray-400 font-bold">
+          Growth starts with action. Our team is ready. Are you?
+        </p>
         <div className="flex gap-2">
-            <Link to="/about"><button className="bg-orange-700 btn-primary text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
+          <Link to="/about">
+            <button className="bg-orange-700 btn-primary text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
               About Us
-            </button></Link>
-           <Link to="/contact"> <button  className="bg-orange-700 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
+            </button>
+          </Link>
+          <Link to="/contact">
+            {" "}
+            <button className="bg-orange-700 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">
               Hire Me
-            </button></Link>
-
-          </div>
+            </button>
+          </Link>
+        </div>
       </motion.div>
       <motion.div
         variants={fadeIn("up", 0.6)}
@@ -90,9 +91,7 @@ const BannerText = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
         className="text-lg pr-96"
-      >
-       
-      </motion.div>
+      ></motion.div>
       <motion.div
         className="absolute text-[20vh] text-[#ffffff09] w-1/2 whitespace-nowrap font-bold"
         variants={sliderVariants}

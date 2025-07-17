@@ -12,6 +12,7 @@ import {
 import { FaUpwork } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
 import { RiTwitterXFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const variants = {
   initial: {
@@ -78,24 +79,31 @@ const Contact = () => {
         <div className=" gap-4 ">
           {/* Social Icons */}
           <div className="flex gap-4 text-2xl ">
-            <button
-              onClick={`https://www.linkedin.com/in/subarna-h-079805183`}
-              className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50"
-            >
-              <FaLinkedinIn />
-            </button>
-            <button onClick={`https://www.upwork.com/freelancers/~0122d17e06b4ed2d35`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-              <FaUpwork />
-            </button>
-            <button onClick={`https://www.facebook.com/subarna.hosen.2024`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-              <FaFacebookF />
-            </button>
-            <button onClick={`https://www.fiverr.com/s/xXQa1xX`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-              <TbBrandFiverr />
-            </button>
-            <button onClick={`https://x.com/BindaasB33434`} className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
-              <RiTwitterXFill />
-            </button>
+            <Link to={`https://www.linkedin.com/in/subarna-h-079805183`}>
+              <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                <FaLinkedinIn />
+              </button>
+            </Link>
+            <Link to={`https://www.upwork.com/freelancers/~0122d17e06b4ed2d35`}>
+              <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                <FaUpwork />
+              </button>
+            </Link>
+            <Link to={`https://www.facebook.com/subarna.hosen.2024`}>
+              <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                <FaFacebookF />
+              </button>
+            </Link>
+            <Link to={`https://www.fiverr.com/s/xXQa1xX`}>
+              <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                <TbBrandFiverr />
+              </button>
+            </Link>
+            <Link to={`https://x.com/BindaasB33434`}>
+              <button className="border border-green-700 text-green-700 p-2 rounded-md hover:bg-green-50">
+                <RiTwitterXFill />
+              </button>
+            </Link>
           </div>
 
           {/* Buttons */}
@@ -137,8 +145,8 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
         >
-          <input type="text" placeholder="Name" required name="name" />
-          <input type="email" placeholder="Email" required name="email" />
+          <input type="text" placeholder="Your Name" required name="name" />
+          <input type="email" placeholder="Your Email" required name="email" />
           <textarea rows={8} placeholder="Message" name="message"></textarea>
           <button>Submit</button>
           {error && "Error"}

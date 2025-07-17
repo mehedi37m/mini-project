@@ -11,18 +11,17 @@ import TopTeacher from "../TopTeacher/TopTeacher";
 const Home = () => {
   return (
     <div>
-        <section id="home">
+      <section id="home">
         <Banner></Banner>
-         </section>
-        <StudentWork></StudentWork>
-        <People></People>
-        {/* <ProjectMain></ProjectMain> */}
-        <HomePageProject></HomePageProject>
-        <Live></Live>
-        {/* <PromoBanner></PromoBanner> */}
-        <TopTeacher></TopTeacher>
-        <Contact></Contact>
-     
+      </section>
+      <StudentWork></StudentWork>
+      <People></People>
+      {/* <ProjectMain></ProjectMain> */}
+      <HomePageProject></HomePageProject>
+      <Live></Live>
+      {/* <PromoBanner></PromoBanner> */}
+      <TopTeacher></TopTeacher>
+      <Contact></Contact>
     </div>
   );
 };

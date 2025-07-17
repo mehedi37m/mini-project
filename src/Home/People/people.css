@@ -1,0 +1,54 @@
+
+.cardId{
+     height: 500px;
+    margin: 50px;
+    /* box-shadow: 5px 5px 5px black; */
+    overflow: hidden;
+    position: relative;
+}
+
+.img{
+     height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.intro{
+    height: 87px;
+    width: 389px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    background: rgb(27,27,27,.5);
+    /* color: white; */
+    transition: .5s;
+    border-radius: 10px;
+}
+h1{
+    font-weight: bold;
+    color: rgb(226, 226, 205);
+}
+ 
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.cardId:hover .intro{
+    height: 300px;
+    bottom: 1px;
+    background: rgba(31, 28, 28, 0.5);
+    color: white;
+}
+
+.cardId:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.cardId:hover img{
+   transform: scale(1.1) rotate(-3deg);
+}

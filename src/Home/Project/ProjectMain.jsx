@@ -11,7 +11,7 @@ const projects = [
     image: `https://i.ibb.co/MyzVwwsr/Whats-App-Image-2025-07-17-at-18-35-20-cfbd88ab.jpg`,
     link: "https://www.upwork.com/freelancers/~0122d17e06b4ed2d35",
   },
-   {
+  {
     name: "Successfully completed LinkedIn and B2B leads",
     year: "Jan2025",
     align: "left",
@@ -26,7 +26,7 @@ const projects = [
     image: `https://i.ibb.co/1ffzmHQV/Whats-App-Image-2025-07-17-at-18-45-46-f6393399.jpg`,
     link: "https://www.upwork.com/freelancers/~0122d17e06b4ed2d35",
   },
-   {
+  {
     name: "Successfully completed Amazon product scraping project",
     year: "Jan2024",
     align: "left",
@@ -41,7 +41,7 @@ const projects = [
     image: `https://i.ibb.co/jkKF9fCB/Whats-App-Image-2025-07-17-at-18-50-46-8da9cda2.jpg`,
     link: "https://www.upwork.com/freelancers/~0122d17e06b4ed2d35",
   },
-   {
+  {
     name: "Successfully completed ESL Teacher Candidate project",
     year: "Jan2023",
     align: "left",
@@ -56,14 +56,14 @@ const projects = [
     image: `https://i.ibb.co/QFb8nd5L/Whats-App-Image-2025-07-17-at-18-31-48-818d35d1.jpg`,
     link: "https://www.upwork.com/freelancers/~0122d17e06b4ed2d35",
   },
-   {
+  {
     name: "Successfully completed recruitment job leads",
     year: "Jan2022",
     align: "left",
     image: `https://i.ibb.co/3YQjXkgc/Whats-App-Image-2025-07-17-at-18-33-05-a0914f5a.jpg`,
     link: "https://www.upwork.com/freelancers/~0122d17e06b4ed2d35",
   },
-]
+];
 
 const ProjectMain = () => {
   return (
