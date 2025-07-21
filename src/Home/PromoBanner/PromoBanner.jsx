@@ -18,7 +18,7 @@ const PromoBanner = () => {
         </div>
 
         <div>
-          {/* <img src={promo} alt="" className="w-96 " /> */}
+         
           <div
             style={{
               position: "relative",

@@ -92,7 +92,7 @@ const HomePageProject = () => {
             );
           })}
         </div>
-        <div className="text-center mt-10">
+        <div className="text-center mt-12">
             <Link to={`/project`} className="btn text-white bg-yellow-700 hover:bg-white hover:text-black">Show All</Link>
         </div>
       </div>
