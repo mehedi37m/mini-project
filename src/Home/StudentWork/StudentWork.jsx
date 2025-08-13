@@ -17,9 +17,9 @@ const StudentWork = () => {
           Our Project <span className='text-yellow-700'>Team Branch!</span>
           
         </h1>
-        <p className='mb-10 text-lg !text-white  !md:w-5/6'>
+        <h2 className='mb-10 text-lg !text-white  !md:w-5/6'>
           We are a performance-focused digital agency dedicated to developing creative strategies, building meaningful user experiences, and driving brand growth through innovation, technology, and audience insight.!
-        </p>
+        </h2>
 
         {/* stats */}
         <div className='flex flex-col sm:flex-row justify-between gap-6 md:w-3/4 my-14'>
@@ -27,19 +27,19 @@ const StudentWork = () => {
             <h1 className='text-3xl font-bold text-yellow-500'>
               {inView && <CountUp end={312} duration={3} />}+
             </h1>
-            <p className='text-base font-bold !text-gray-400'>Complete Project</p>
+            <h2 className='text-base font-bold !text-gray-400'>Complete Project</h2>
           </div>
           <div>
             <h1 className='text-3xl font-bold text-yellow-500'>
               {inView && <CountUp end={123} duration={3} />}+
             </h1>
-            <p className='text-base font-bold text-gray-400'>Register Users</p>
+            <h2 className='text-base font-bold text-gray-400'>Register Users</h2>
           </div>
           <div>
             <h1 className='text-3xl font-bold text-yellow-500'>
               {inView && <CountUp end={176} duration={3} />}+
             </h1>
-            <p className='text-base font-bold text-gray-400'>Reword</p>
+            <h2 className='text-base font-bold text-gray-400'>Reword</h2>
           </div>
         </div>
 

@@ -68,9 +68,9 @@ const BannerText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4 space-y-6"
       >
-        <p className="text-gray-400 font-bold">
+        <h2 className="text-gray-400 font-bold">
           Growth starts with action. Our team is ready. Are you?
-        </p>
+        </h2>
         <div className="flex gap-2">
           <Link to="/about">
             <button className="bg-orange-700 btn-primary text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-black">

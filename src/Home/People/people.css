@@ -23,7 +23,7 @@
     background: rgb(27,27,27,.5);
     /* color: white; */
     transition: .5s;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 h1{
     font-weight: bold;

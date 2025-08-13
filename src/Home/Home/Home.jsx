@@ -1,6 +1,7 @@
 import Contact from "../../Components/Contact/Contact";
 import Banner from "../Banner/Banner";
 import Live from "../Live/Live";
+import Leader from "../People/Leader";
 import People from "../People/People";
 import HomePageProject from "../Project/HomePageProject";
 import ProjectMain from "../Project/ProjectMain";
@@ -15,7 +16,8 @@ const Home = () => {
         <Banner></Banner>
       </section>
       <StudentWork></StudentWork>
-      <People></People>
+      {/* <People></People> */}
+      <Leader></Leader>
       {/* <ProjectMain></ProjectMain> */}
       <HomePageProject></HomePageProject>
       <Live></Live>

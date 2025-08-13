@@ -8,11 +8,10 @@ import { FaUpwork } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
 import { RiTwitterXFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import People from "../People/People";
 
-const About = () => {
+const Leader = () => {
   return (
-    <div className="container mx-auto pt-32">
+    <div className="container mx-auto">
       <div className="hero bg-base-200 ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-96 shadow-sm">
@@ -77,13 +76,13 @@ const About = () => {
             <h2 className="py-6 text-white">
               This is more than just a statement—it's our pledge to create meaningful impact. We’re dedicated to providing solutions that not only perform but actively drive our clients’ growth. It’s our promise to deliver strategies that leave a lasting mark, enabling businesses to not only grow but truly flourish.
             </h2>
+            <Link to={"/about"} className="btn btn-primary text-white">About us</Link>
           </div>
         </div>
       </div>
 
-      <People></People>
     </div>
   );
 };
 
-export default About;
+export default Leader;

@@ -7,6 +7,7 @@ import Home from "../Home/Home/Home";
 import ProjectMain from "../Home/Project/ProjectMain";
 import TopTeacher from "../Home/TopTeacher/TopTeacher";
 import Contact from "../Components/Contact/Contact";
+import About from "../Home/About/About";
 
   const Router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ import Contact from "../Components/Contact/Contact";
         {
             path: "/contact",
             element:<Contact></Contact>
+        },
+        {
+            path: "/about",
+            element:<About></About>
         },
       ]
     }

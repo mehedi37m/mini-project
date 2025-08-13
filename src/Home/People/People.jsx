@@ -36,10 +36,12 @@ const People = () => {
   return (
     <div className=" container mx-auto">
 
+      
+
        
 
       <div className="mx-auto text-center md:w-4/12 ">
-        <p className="text-white mb-3"> --- LeadZora ---</p>
+        <h2 className="text-white mb-3"> --- LeadZora ---</h2>
         <h1 className="text-yellow-600 text-2xl font-bold uppercase border-y-2 ">
           Our Team Member
         </h1>
