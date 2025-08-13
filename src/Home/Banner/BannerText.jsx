@@ -20,16 +20,16 @@ const sliderVariants = {
 const BannerText = () => {
   return (
     <div className="flex flex-col gap-4  justify-center md:text-left sm:text-center">
-      <motion.h2
+      <motion.h3
         variants={fadeIn("down", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
+        className="lg:text-2xl sm:text-xl  uppercase text-white "
       >
         Its your <span className="text-yellow-500">time to shine</span>— we
         create opportunities.
-      </motion.h2>
+      </motion.h3>
       <motion.h1
         variants={fadeIn("right", 0.4)}
         initial="hidden"

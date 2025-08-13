@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Leader = () => {
   return (
     <div className="container mx-auto">
-      <div className="hero bg-base-200 ">
+      <div className="hero ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 md:w-96 shadow-sm">
             <figure>

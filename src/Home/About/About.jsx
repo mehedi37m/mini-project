@@ -13,7 +13,7 @@ import People from "../People/People";
 const About = () => {
   return (
     <div className="container mx-auto pt-32">
-      <div className="hero bg-base-200 ">
+      <div className="hero  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-96 shadow-sm">
             <figure>
