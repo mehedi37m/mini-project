@@ -41,8 +41,8 @@ const NavBar = () => {
   );
 
   return (
-    <div className=" ">
-      <div className="navbar fixed z-10  bg-opacity-30 bg-black text-white">
+    <div className="">
+      <div className="navbar fixed  bg-opacity-30 bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,7 +63,7 @@ const NavBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white text-black font-bold rounded-box w-52"
             >
               {navLink}
             </ul>
@@ -79,8 +79,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1 text-xl text-white">
             {navLink}
           </ul>
-        </div>
-        <div className="flex flex-col items-center gap-4 p-6">
+          <div className="flex flex-col items-center gap-4 p-6">
           {/* Social Icons */}
           <div className="flex gap-4 ">
             <Link to={`https://www.linkedin.com/in/subarna-h-079805183`}>
@@ -110,6 +109,8 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
+        </div>
+        
       </div>
     </div>
   );

@@ -14,9 +14,9 @@ const Leader = () => {
     <div className="container mx-auto">
       <div className="hero bg-base-200 ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card bg-base-100 w-96 shadow-sm">
+          <div className="card bg-base-100 md:w-96 shadow-sm">
             <figure>
-              <img className="md:h-72 w-full"
+              <img className="md:h-72 w-28 md:w-full"
                 src="https://i.ibb.co.com/dwvtRrFR/cute-hijab-girl-sticker-vector-illustration-566152-169.jpg"
                 alt="mini"
               />
@@ -66,17 +66,17 @@ const Leader = () => {
           </div>
           
           <div className="flex-1 ">
-            <h1 className="text-6xl font-bold text-yellow-700">
+            <h1 className="text-2xl md:text-6xl font-bold text-yellow-700">
               Leader of our agency
             </h1>
-            <h1 className="text-3xl font-bold text-yellow-900">Our mission</h1>
-            <h1 className="text-xl font-bold">
+            <h1 className="md:text-3xl text-xl font-bold text-yellow-900">Our mission</h1>
+            <h1 className="md:text-xl text-sm font-bold">
               To provide impactful growth solutions
             </h1>
-            <h2 className="py-6 text-white">
+            <h2 className="py-6 text-white text-sm overflow-auto">
               This is more than just a statement—it's our pledge to create meaningful impact. We’re dedicated to providing solutions that not only perform but actively drive our clients’ growth. It’s our promise to deliver strategies that leave a lasting mark, enabling businesses to not only grow but truly flourish.
             </h2>
-            <Link to={"/about"} className="btn btn-primary text-white">About us</Link>
+            <Link to={"/about"} className="btn  text-white bg-yellow-700">About us</Link>
           </div>
         </div>
       </div>

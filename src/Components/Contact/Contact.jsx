@@ -5,9 +5,7 @@ import emailjs from "@emailjs/browser";
 import {
   FaFacebookF,
   FaLinkedinIn,
-  FaInstagram,
-  FaHome,
-  FaArrowUp,
+ 
 } from "react-icons/fa";
 import { FaUpwork } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -111,7 +109,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="formContainer">
-        <motion.div
+        {/* <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
@@ -136,7 +134,7 @@ const Contact = () => {
               fill="#1C274C"
             />
           </svg>
-        </motion.div>
+        </motion.div> */}
 
         <motion.form
           ref={formRef}

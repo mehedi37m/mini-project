@@ -85,21 +85,8 @@ const BannerText = () => {
           </Link>
         </div>
       </motion.div>
-      <motion.div
-        variants={fadeIn("up", 0.6)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0 }}
-        className="text-lg pr-96"
-      ></motion.div>
-      <motion.div
-        className="absolute text-[20vh] text-[#ffffff09] w-1/2 whitespace-nowrap font-bold"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Lead generation
-      </motion.div>
+     
+     
     </div>
   );
 };
